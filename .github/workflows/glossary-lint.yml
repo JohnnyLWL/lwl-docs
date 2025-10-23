@@ -1,0 +1,30 @@
+name: Glossary Lint
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "docs/**"
+      - ".github/workflows/glossary-lint.yml"
+  pull_request:
+    branches: ["**"]
+    paths:
+      - "docs/**"
+      - ".github/workflows/glossary-lint.yml"
+
+jobs:
+  lint:
+    name: Run glossary linter
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run glossary linter
+        run: python docs/lint/check_glossary.py
