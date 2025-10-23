@@ -1,0 +1,116 @@
+---
+source: BRD Consolidated Communications v6 FINAL.docx
+section: 4.0 NON-FUNCTIONAL REQUIREMENTS & QUALITY EXPECTATIONS
+integrity: full
+format: preservation_mode
+encoding: utf-8
+---
+
+4.0 NON-FUNCTIONAL REQUIREMENTS & QUALITY EXPECTATIONS
+
+4.1 Purpose
+
+This section defines the non-functional expectations for the Consolidated Client Communications Hub. While functional requirements describe what the system must do, these define how well it must perform—emphasizing reliability, usability, scalability, and control.
+
+4.1.1 Google Workspace Requirement
+
+Living With Lolo will continue using Google Workspace (Gmail) as its enterprise email platform. This is a non-negotiable requirement. The solution must work within the Google Workspace environment, not replace it.
+
+4.1.2 Operational Interface Requirements
+
+4.1.2.1 All client-facing communication must occur through the HubSpot interface (desktop or mobile app).  
+4.1.2.2 Team members will not use Gmail directly for client interactions.  
+4.1.2.3 Gmail serves as the underlying mailbox infrastructure and backup repository.  
+4.1.2.4 HubSpot is the operational interface where routing and collaboration occur.  
+4.1.2.5 Gmail must remain the underlying email infrastructure and must retain a complete copy of all email communications for compliance and backup purposes.
+
+4.1.3 Distributed Data Ownership Model
+
+Living With Lolo's communications ecosystem distributes data ownership across three platforms, each serving as the authoritative source for its domain:
+
+4.1.3.1 Gmail: Email Message Content Authority  
+Gmail serves as the authoritative source for email message content, providing legal compliance, audit trail, and disaster recovery backup. Gmail retains all raw SMTP messages indefinitely. In the event of HubSpot data loss or corruption, email content can be recovered from Gmail.
+
+4.1.3.2 HubSpot: Operational Context & Routing Authority  
+HubSpot serves as the authoritative source for operational context including:  
+POC assignments, project-phase associations, and communication metadata (status, tags, timestamps, etc.). HubSpot provides a unified workspace for message visibility, response, and tracking.
+
+4.1.3.3 Airtable: Project Metadata Authority  
+Airtable is the authoritative source for project metadata (client name, address, phase, and responsible team members). Any routing or reporting dependent on project phase, status, or assignment draws from Airtable data synchronized into HubSpot.
+
+4.1.4 SMS Infrastructure Requirement
+
+All text messaging must occur through HubSpot’s native SMS Access Add-On (no Twilio or third-party integration). This ensures unified logging, compliance, and message visibility.
+
+4.2 System Performance & Reliability
+
+4.2.1 Availability: The solution must maintain uptime of 99.5% or higher, excluding scheduled maintenance.  
+4.2.2 Latency: Inbound messages must appear in the HubSpot Conversations workspace within 10 seconds of arrival.  
+4.2.3 Backup Frequency: Gmail automatically stores all inbound and outbound email. No separate email backup is required. HubSpot data retention will follow the standard platform SLA.  
+4.2.4 Data Retention: All communications (email and SMS) must remain accessible in HubSpot for at least one year before archiving.  
+4.2.5 Scalability: The solution must handle at least 50 concurrent projects and 5,000 total active conversations without performance degradation.
+
+4.3 Usability & Accessibility
+
+4.3.1 Mobile Access: Users must be able to read, reply, and assign conversations using the HubSpot mobile app with full feature parity.  
+4.3.2 Interface Consistency: All team members must work through a standardized interface with consistent view and layout.  
+4.3.3 Accessibility: The system should conform to WCAG 2.1 AA standards to ensure usability for all team members.  
+4.3.4 Response Notification: Each user must be able to configure their own notification preferences (mobile push, desktop alert, or daily summary).  
+4.3.5 Error Handling: User-facing errors must be descriptive and guide corrective action rather than generic failure codes.  
+4.3.6 Training: The system must require less than 4 hours of user training for any new employee to become proficient in standard workflows.
+
+4.4 Security & Compliance
+
+4.4.1 Authentication: The solution must use Google SSO for user authentication across all integrated systems (HubSpot, Gmail, Airtable, Zapier).  
+4.4.2 Permissions: Role-based access control (RBAC) must restrict write access to authorized users only.  
+4.4.3 Data Encryption: All data must be encrypted at rest and in transit using TLS 1.2 or higher.  
+4.4.4 Audit Trails: Every message, assignment, or system change must include timestamp, user ID, and context for auditability.  
+4.4.5 Compliance: The system must adhere to TCPA and data protection best practices. Automated or unsolicited SMS campaigns are prohibited.  
+4.4.6 Backups: Gmail provides message-level backup; HubSpot and Airtable maintain data redundancy per their SaaS compliance standards.  
+4.4.7 Vendor Trust: All vendors used (HubSpot, Google, Airtable, Zapier) must provide published SOC 2 Type II or equivalent compliance certification.
+
+4.5 Integration Performance Standards
+
+| Integration | Purpose | Update Type | Expected Latency | Error Handling |  
+| --- | --- | --- | --- | --- |  
+| Airtable → HubSpot | Project metadata sync | Event-driven | < 30 sec | Retry up to 3x before admin alert |  
+| HubSpot → Slack | Notifications & summaries | Scheduled / Triggered | < 60 sec | Retry up to 2x before admin alert |  
+| HubSpot → Gmail | Email routing backbone | Real-time | < 5 sec | Native retry |  
+| HubSpot ↔ SMS Add-On | Text messaging | Real-time | < 5 sec | Native retry |  
+
+4.6 Quality & Maintainability
+
+4.6.1 Configuration Documentation: All workflows, routing rules, and message templates must be documented and version-controlled in Google Drive.  
+4.6.2 Test Coverage: Each workflow must undergo validation in sandbox prior to production deployment.  
+4.6.3 Change Management: Any production configuration change must be logged and approved through the change control process (Section 6.0).  
+4.6.4 Maintainability: The system should minimize use of hardcoded IDs, email addresses, or dependencies to simplify future updates.  
+4.6.5 Vendor Lifecycle: Chosen tools must have active support lifecycles and public product roadmaps ensuring forward compatibility.  
+4.6.6 Monitoring: Daily checks on HubSpot sync logs and Zapier tasks must confirm successful message flow and alert on failures.
+
+4.7 Reporting & Measurement
+
+4.7.1 Daily reports must provide message volume, response time averages, and open conversation counts.  
+4.7.2 Weekly summaries must include SLA compliance (messages responded within one business day).  
+4.7.3 Monthly operational reviews must evaluate uptime, error logs, and user satisfaction feedback.  
+4.7.4 Reports should be exportable to Google Sheets or CSV for external review.
+
+4.8 Performance Benchmark Targets
+
+| Metric | Target | Measurement Method |  
+| --- | --- | --- |  
+| Message Routing Latency | ≤ 10 seconds | HubSpot internal event logs |  
+| System Uptime | ≥ 99.5% | Vendor SLA |  
+| Notification Delay | ≤ 30 seconds | Internal HubSpot timing logs |  
+| Data Sync Accuracy | 100% | Record-level validation |  
+| Training Completion Rate | 100% within 4 hours | HR training log |  
+
+4.9 Scalability & Future Readiness
+
+4.9.1 The solution must support additional user roles, new shared inboxes, and additional communication channels without major architectural redesign.  
+4.9.2 The design should accommodate potential integration with AI analytics, automated tagging, or response-suggestion features.  
+4.9.3 System performance must remain stable at double current operational scale (100 projects, 10,000 messages).  
+4.9.4 Configuration architecture must allow sandbox replication for testing new workflows without impacting production.
+
+4.10 Summary
+
+The system’s non-functional foundation ensures not just capability but consistency, speed, reliability, and security. These qualities underpin the overall business objective of a professional, unified, and brand-aligned communication experience.

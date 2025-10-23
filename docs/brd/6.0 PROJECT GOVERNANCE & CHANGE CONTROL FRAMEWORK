@@ -1,0 +1,94 @@
+---
+source: BRD Consolidated Communications v6 FINAL.docx
+section: 6.0 PROJECT GOVERNANCE & CHANGE CONTROL FRAMEWORK
+integrity: full
+format: preservation_mode
+encoding: utf-8
+extraction_method: paragraph_and_table_parser
+order_preserved: true
+tables_preserved: true
+revision: 1.1
+strict_lossless_mode: true
+---
+
+# 6.0 PROJECT GOVERNANCE & CHANGE CONTROL FRAMEWORK
+
+## 6.1 Purpose
+
+This section defines the governance, change control, and approval framework specific to the Living With Lolo Consolidated Communications Project. It ensures all implementation work remains aligned with approved business requirements, scope, and organizational accountability.
+
+This section does not govern ongoing operational use of the technology—only the execution, documentation, and oversight of this implementation.
+
+## 6.2 Governance Objectives
+
+### 6.2.1 Accountability: Define clear ownership for requirements, approvals, and LWL IT Lead deliverables under the authority of the LWL IT Lead as project owner.
+
+### 6.2.2 Integrity: Maintain continuous alignment between this BRD, HubSpot configuration, and evolving business intent, with any variances explicitly recorded in the Change Log.
+
+### 6.2.3 Transparency: Establish a single line of communication between Living With Lolo and the LWL IT Lead for daily updates, questions, and milestone confirmations.
+
+## 6.3 Project Governance Structure
+
+| **Role / Entity** | **Responsibility** |
+|------------------|-------------------|
+| CEO | Executive oversight and final project sign-off. Provides strategic approval of all major scope changes. |
+| LWL IT Lead (Project Owner) | Primary technical implementer for HubSpot configuration. Responsible for Deals setup, routing logic, Gmail sync, SMS Access Add-On integration, and user trainingServes as project owner coordinating all implementation activities. Collaborates with Airtable Administrator on integration architecture. |
+| Director of Operations | Business requirements approver for processes impacting scheduling, logistics, and client experience. |
+| Director of Construction | Business requirements approver for processes affecting field coordination, construction workflows, or trade interactions. |
+| Airtable Administrator / Integration Architect | Technical architect for Airtable-HubSpot synchronization. Responsible for Airtable schema validation, Project ID naming convention, webhook automation development, Zapier workflow configuration, ongoing sync monitoring, and data integrity validation. Technical approval authority for integration architecture decisions. |
+| Advisory Review (as needed) | Subject-matter experts or functional leads (Design, Finance, Procurement) may be consulted to validate process alignment during build or testing phases. |
+
+## 6.4 Change Control Process
+
+Change control applies to scope changes that impact budget, timeline, or business requirements. Since implementation is primarily internal, change management focuses on stakeholder alignment rather than vendor contracts.
+
+### 6.4.1 Minor Technical Adjustments
+
+LWL IT Lead makes implementation decisions within approved scope without formal change process.
+
+### 6.4.2 Moderate Scope Changes
+
+LWL IT Lead documents impact on timeline and effort, reviews with Operations and Construction Directors, proceeds with verbal approval.
+
+### 6.4.3 Major Scope Additions or Budget Impacts
+
+Requires CEO written approval before proceeding. Examples include: adding voice call integration, upgrading to HubSpot Enterprise tier, or significant architectural changes affecting multiple systems.
+
+### 6.4.4 Documentation
+
+Approved changes must be incorporated into an updated Change Log maintained by LWL IT Lead. All documentation revisions must include version date, summary of change, and approver initials.
+
+### 6.4.5 Approval Authority
+
+| **Change Type** | **Approval Authority** | **Required Documentation** |
+|----------------|----------------------|--------------------------|
+| Clarification of existing requirement | LWL IT Lead | Email or meeting note |
+| Minor configuration adjustment (no cost/schedule impact) | LWL IT Lead | Updated BRD excerpt |
+| Moderate scope or functionality change | Director of Operations + Director of Construction | Formal CRF with impact summary |
+| Major scope expansion, new integrations, or budget change | CEO + LWL IT Lead | Signed CRF + updated statement of work |
+
+### 6.4.6 Implementation & Recordkeeping
+
+#### 6.4.6.1 Approved changes must be incorporated into an updated Change Log, maintained by the LWL IT Lead.
+
+#### 6.4.6.2 All documentation revisions must include a version date, summary of change, and approver initials.
+
+## 6.5 Version Control & Document Management
+
+### 6.5.1 LWL IT Lead is the sole owner and custodian of the official Business Requirements Document (BRD).
+
+### 6.5.2 All versions will be controlled using a version numbering system (e.g., BRD v1.0 Draft, v1.1 Revised).
+
+### 6.5.3 Each revision must include:
+
+#### 6.5.3.1 Version date
+
+#### 6.5.3.2 Author/editor
+
+#### 6.5.3.3 Summary of changes
+
+#### 6.5.3.4 Approval signatures or initials (as applicable)
+
+## 6.6 Summary
+
+This governance framework ensures that the Living With Lolo Consolidated Communications Hub Implementation proceeds with transparency, accountability, and alignment to business intent. All decisions, changes, and approvals LWL IT Lead with CEO approval for major scope or budget changes.
