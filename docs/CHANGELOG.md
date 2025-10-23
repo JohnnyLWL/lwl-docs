@@ -7,6 +7,10 @@ status: Active
 
 # Change Log (date-based; single source of truth)
 
+### 2025-10-23 — add glossary linter to validate documentation terminology  (6906952)
+**Files:** docs/lint/check_glossary.py
+
+
 ## 2025-10-23 — Documentation Control System Created
 **Type:** Infrastructure  
 **Reason:** Establish centralized source of truth and traceability.  
