@@ -1,3 +1,4 @@
+import sys
 import re
 from pathlib import Path
 
@@ -31,9 +32,12 @@ for file in files:
 # --- Report ---
 if not violations:
     print("✅ No glossary violations found!")
+    print("\nDone.")
+    sys.exit(0)
 else:
     print(f"\n🚫 Found {len(violations)} potential violations:")
     for f, bad in violations:
         print(f"  • {f}: uses forbidden term '{bad}'")
+    print("\nDone.")
+    sys.exit(1)  # <- Non-zero exit code so CI fails
 
-print("\nDone.")
