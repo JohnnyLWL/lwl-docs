@@ -1,0 +1,35 @@
+name: BRD/SDD Sync Validation
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+  pull_request:
+    paths:
+      - 'docs/**'
+
+jobs:
+  check-sync:
+    name: Run BRD/SDD Sync Checker
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies (none needed, but future-proof)
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run BRD/SDD sync check
+        run: |
+          python docs/tools/check_brd_sdd_sync.py
+
+      - name: Fail if warnings should be enforced (optional)
+        if: ${{ failure() }}
+        run: echo "❌ Sync check failed. Please fix BRD/SDD validation issues before merging."
