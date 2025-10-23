@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART ONE v1.docx
-section: 3.0 HUBSPOT CONFIGURATION SPECIFICATIONS (Part 1 - Sections 3.1-3.3)
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.hubspot-configuration-specifications
+title: Hubspot Configuration Specifications
 ---
-
 ## 3.0 HUBSPOT CONFIGURATION SPECIFICATIONS
 
 ## 3.1 HubSpot Subscription and Licensing

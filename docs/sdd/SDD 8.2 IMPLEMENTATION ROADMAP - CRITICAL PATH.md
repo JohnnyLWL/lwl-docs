@@ -1,14 +1,7 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART TWO v1.docx
-section: 8.2 IMPLEMENTATION ROADMAP - CRITICAL PATH
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.implementation-roadmap-critical-path
+title: Implementation Roadmap Critical Path
 ---
 ## 8.2 IMPLEMENTATION ROADMAP - CRITICAL PATH
 

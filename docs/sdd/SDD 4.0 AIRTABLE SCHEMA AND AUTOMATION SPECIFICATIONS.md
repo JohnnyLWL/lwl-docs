@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART ONE v1.docx
-section: 4.0 AIRTABLE SCHEMA AND AUTOMATION SPECIFICATIONS
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.airtable-schema-and-automation-specifications
+title: Airtable Schema And Automation Specifications
 ---
-
 ## 4.0 AIRTABLE SCHEMA AND AUTOMATION SPECIFICATIONS
 
 ## 4.1 Airtable Administrator Responsibilities

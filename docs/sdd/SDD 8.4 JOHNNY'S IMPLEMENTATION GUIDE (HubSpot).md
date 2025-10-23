@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART THREE v1.docx
-section: 8.4 JOHNNY'S IMPLEMENTATION GUIDE (HubSpot)
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.part-3-8-4-johnnys-implementation-guide-hubspot
+title: Part 3  8.4 JOHNNY'S IMPLEMENTATION GUIDE (HubSpot)
 ---
-
 **LIVING WITH LOLO**
 
 **SYSTEM DESIGN DOCUMENT (SDD)**

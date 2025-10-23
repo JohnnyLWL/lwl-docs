@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART ONE v1.docx
-section: 5.0 INTEGRATION ARCHITECTURE (ZAPIER WORKFLOWS) (Part 1 - Sections 5.1-5.2)
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.integration-architecture-zapier-workflows
+title: Integration Architecture (Zapier Workflows)
 ---
-
 ## 5.0 INTEGRATION ARCHITECTURE (ZAPIER WORKFLOWS)
 
 ## 5.1 Zapier Configuration Overview

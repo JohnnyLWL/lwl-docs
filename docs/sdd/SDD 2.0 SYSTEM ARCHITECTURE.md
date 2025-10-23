@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART ONE v1.docx
-section: 2.0 SYSTEM ARCHITECTURE
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.system-architecture
+title: System Architecture
 ---
-
 ## 2.0 SYSTEM ARCHITECTURE
 
 ## 2.1 Architecture Overview

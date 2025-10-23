@@ -1,16 +1,8 @@
 ---
-source: BRD Consolidated Communications v6 FINAL.docx
-section: APPENDIX B - ACRONYM REFERENCE
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: BRD
+section_id: brd.appendix-b-acronym-reference
+title: Appendix B Acronym Reference
 ---
-
 **APPENDIX B: ACRONYM REFERENCE**
 
 | **Acronym** | **Definition** |

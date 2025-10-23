@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART TWO v1.docx
-section: 8.3 JOSH'S IMPLEMENTATION GUIDE (Airtable & Zapier)
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.joshs-implementation-guide-airtable-and-zapier
+title: Josh'S Implementation Guide (Airtable & Zapier)
 ---
-
 ## 8.3 JOSH'S IMPLEMENTATION GUIDE (Airtable & Zapier)
 
 ### 8.3.1 Webhook 1: New Paid Project Trigger

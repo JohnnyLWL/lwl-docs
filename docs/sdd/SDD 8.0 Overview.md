@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART TWO v1.docx
-section: 8.0 QUICK REFERENCE GUIDES & IMPLEMENTATION ROADMAP (through 8.1)
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.part-2-8-0-quick-reference-guides-and-implementation-roadmap
+title: Part 2  8.0 QUICK REFERENCE GUIDES & IMPLEMENTATION ROADMAP
 ---
-
 **LIVING WITH LOLO**
 
 **SYSTEM DESIGN DOCUMENT (SDD)**

@@ -1,16 +1,8 @@
 ---
-source: BRD Consolidated Communications v6 FINAL.docx
-section: APPENDIX C - PROJECT PHASE TO POC MAPPING
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: BRD
+section_id: brd.appendix-c-project-phase-to-poc-mapping
+title: Appendix C Project Phase To Poc Mapping
 ---
-
 **APPENDIX C: PROJECT PHASE TO POC MAPPING**
 
 **C.1 Purpose**

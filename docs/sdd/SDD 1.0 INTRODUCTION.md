@@ -1,16 +1,8 @@
 ---
-source: SDD - System Design Document - Consolidated Communication PART ONE v1.docx
-section: 1.0 INTRODUCTION
-integrity: full
-format: preservation_mode
-encoding: utf-8
-extraction_method: paragraph_and_table_parser
-order_preserved: true
-tables_preserved: true
-revision: 1.1
-strict_lossless_mode: true
+doc_type: SDD
+section_id: sdd.introduction
+title: Introduction
 ---
-
 **LIVING WITH LOLO**
 
 **SYSTEM DESIGN DOCUMENT (SDD)**

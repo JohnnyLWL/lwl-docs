@@ -1,0 +1,22 @@
+{
+  "links": [
+    {
+      "from": "brd.scope",
+      "to": ["sdd.requirements", "sdd.constraints"],
+      "required": ["sdd.requirements"]    
+    },
+    {
+      "from": "brd.business-context",
+      "to": ["sdd.solution-architecture"],
+      "required": []                       
+    }
+  ],
+  "allowed_unpaired": [
+    "sdd.testing-strategy",
+    "sdd.deployment-runbook"
+  ],
+  "ignore_patterns": [
+    "sdd.internal-*",
+    "brd.appendix-*"
+  ]
+}
